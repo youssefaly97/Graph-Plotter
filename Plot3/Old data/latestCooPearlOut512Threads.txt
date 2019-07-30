@@ -1,0 +1,10 @@
+**************************************************************
+Number of Threads -->
+32
+sparsity = 0
+Compression time taken 259521395
+Solution time taken 3193120
+sparsity = 90
+Compression time taken 59445155
+Solution time taken 259315
+**************************************************************

@@ -1,0 +1,64 @@
+gcc -lcilkrts -fcilkplus -I/software/emu-19.02/x86/include -lemu_c_utils -L/software/emu-19.02/x86/lib -o x86/matGen x86/matGen.c -lm
+gcc -lcilkrts -fcilkplus -I/software/emu-19.02/x86/include -lemu_c_utils -L/software/emu-19.02/x86/lib -o x86/vecGen x86/vecGen.c -lm
+gcc -lcilkrts -fcilkplus -I/software/emu-19.02/x86/include -lemu_c_utils -L/software/emu-19.02/x86/lib -o x86/execlil x86/lilx86Code.c -lm
+gcc -lcilkrts -fcilkplus x86/lilx86CodeN.c -o x86/execlilN -lm
+emu-cc -lemu_c_utils EMU/matGen.c -o EMU/matGen.mwx
+emu-cc -lemu_c_utils EMU/vecGen.c -o EMU/vecGen.mwx
+emu-cc -lemu_c_utils EMU/lilemuCode.c -o EMU/execlil.mwx
+**************************************************************
+**************************************************************
+Thread --> 
+32
+sparsity = 0
+Compression time taken 37475385150
+Solution time taken 5200761650
+sparsity = 10
+Compression time taken 37291506560
+Solution time taken 5547038000
+sparsity = 50
+Compression time taken 35540130255
+Solution time taken 5683195210
+sparsity = 90
+Compression time taken 20317049130
+Solution time taken 2099973120
+32 done
+**************************************************************
+**************************************************************
+**************************************************************
+**************************************************************
+Thread --> 
+128
+sparsity = 0
+sparsity = 10
+sparsity = 50
+sparsity = 90
+Compression time taken 20217287475
+Solution time taken 2253608630
+128 done
+**************************************************************
+**************************************************************
+**************************************************************
+**************************************************************
+Thread --> 
+512
+sparsity = 0
+sparsity = 10
+sparsity = 50
+sparsity = 90
+512 done
+**************************************************************
+**************************************************************
+**************************************************************
+**************************************************************
+Thread --> 
+2048
+sparsity = 0
+sparsity = 10
+sparsity = 50
+sparsity = 90
+Compression time taken 19966768010
+Solution time taken 2016615930
+2048 done
+**************************************************************
+**************************************************************
+All done

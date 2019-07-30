@@ -1,0 +1,78 @@
+**************************************************************
+Number of Elements --> 
+32
+sparsity = 0
+Compression time taken 20855660
+Solution time taken 156800
+sparsity = 90
+Compression time taken 14135065
+Solution time taken 3120285
+32 done
+**************************************************************
+**************************************************************
+Number of Elements --> 
+64
+sparsity = 0
+Compression time taken 40302080
+Solution time taken 173320
+sparsity = 90
+Compression time taken 12477850
+Solution time taken 180005
+64 done
+**************************************************************
+**************************************************************
+Number of Elements --> 
+128
+sparsity = 0
+Compression time taken 42986405
+Solution time taken 629965
+sparsity = 90
+Compression time taken 18657800
+Solution time taken 221655
+128 done
+**************************************************************
+**************************************************************
+Number of Elements --> 
+256
+sparsity = 0
+Compression time taken 185933055
+Solution time taken 1532930
+sparsity = 90
+Compression time taken 41371330
+Solution time taken 1967210
+256 done
+**************************************************************
+**************************************************************
+Number of Elements --> 
+512
+sparsity = 0
+Compression time taken 259521395
+Solution time taken 3193120
+sparsity = 90
+Compression time taken 59445155
+Solution time taken 259315
+512 done
+**************************************************************
+**************************************************************
+Number of Elements --> 
+1024
+sparsity = 0
+Compression time taken 608106590
+Solution time taken 10205370
+sparsity = 90
+Compression time taken 131270545
+Solution time taken 2153410
+1024 done
+**************************************************************
+**************************************************************
+Number of Elements --> 
+2048
+sparsity = 0
+Compression time taken 1836464840
+Solution time taken 86895410
+sparsity = 90
+Compression time taken 379825670
+Solution time taken 4532675
+2048 done
+**************************************************************
+All done
