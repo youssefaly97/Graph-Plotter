@@ -42,9 +42,9 @@ def plot_autolabel(pointsx,pointsy,color,plot,figure):
         else:
             label = plot.annotate(str(format(point[1],'1.1e'))[0:5]+str(format(point[1],'1.1e'))[-1],
                         xy=(point),
-                        xytext=(0, 3),  # 3 points vertical offset
+                        xytext=(0, -3),  # 3 points vertical offset
                         textcoords="offset points",
-                        ha='center', va='bottom',rotation = 90, color=color)
+                        ha='center', va='top',rotation = 90, color=color)
         
         figure.tight_layout()
         #plt.draw()

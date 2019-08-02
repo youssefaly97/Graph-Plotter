@@ -76,7 +76,7 @@ if (type(emu) == int):
     
 mp.plot(np.array((x86[:,0]),dtype=int),                             #X data
         np.array([emu[:,2],x86[:,2],-1.5*x86[:,2],1.6*x86[:,2],x86[:,2]]),                              #Y data
-        [1,0,0,0,0],                                                      #Plot Type
+        [1,0,1,0,0],                                                      #Plot Type
         ["blue","red","purple","green","orange"],                                          #Colors
         ["Threads","Clock Cycles","EMU vs AMD","EMU","x86","x88","x89","x80"],
         [0,0,1,1,0])     #Labels
