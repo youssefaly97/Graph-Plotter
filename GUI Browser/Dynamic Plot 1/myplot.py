@@ -33,6 +33,7 @@ def bar_autolabel(rects,color,plot,figure):
 def plot_autolabel(pointsx,pointsy,color,plot,figure):
     points = np.array((pointsx,pointsy)).T
     for point in points:
+        label = 0
         if(point[1] >= 0):
             label = plot.annotate(str(format(point[1],'1.1e'))[0:4]+str(format(point[1],'1.1e'))[-1],
                         xy=(point),

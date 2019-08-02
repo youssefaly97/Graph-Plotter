@@ -79,7 +79,7 @@ mp.plot(np.array((x86[:,0]),dtype=int),                             #X data
         [1,0,1,0,0],                                                      #Plot Type
         ["blue","red","purple","green","orange"],                                          #Colors
         ["Threads","Clock Cycles","EMU vs AMD","EMU","x86","x88","x89","x80"],
-        [0,0,1,1,0])     #Labels
+        [1,0,1,1,0])     #Labels
 
 #678 48 8719
 # $1455
