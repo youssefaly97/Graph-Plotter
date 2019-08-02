@@ -18,9 +18,9 @@ def bar_autolabel(rects,color,plot,figure):
         else:
             label = plot.annotate(str(format(height,'1.1e'))[0:5]+str(format(height,'1.1e'))[-1],
                         xy=(rect.get_x() + rect.get_width() / 2, height),
-                        xytext=(0, 3),  # 3 points vertical offset
+                        xytext=(0, -3),  # 3 points vertical offset
                         textcoords="offset points",
-                        ha='center', va='bottom',color=color)
+                        ha='center', va='top',color=color,rotation = 90)
         
         figure.tight_layout()
         #plt.draw()
