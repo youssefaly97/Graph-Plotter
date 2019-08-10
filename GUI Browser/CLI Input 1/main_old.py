@@ -52,6 +52,9 @@ for i in range(0,len(os.listdir())):
 emu = pf.parse(filelist[1])
 x86 = pf.parse(filelist[0])
 
+
+
+
 #if emu[sp,0,4] != x86[sp,0,4]:
 #    print("Matrix Size Mismatch")
 

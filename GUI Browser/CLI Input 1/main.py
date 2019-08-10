@@ -1,3 +1,9 @@
+# TO DO:
+# split by sparsities
+# align to smallest number of threads
+# align all threads in all sparsities
+# zero pad empty thread counts
+
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jul 25 21:57:05 2019
@@ -59,26 +65,22 @@ x86 = pf.parse(filelist[0])
 #x86 = np.append(x86,np.zeros((2,6,5)),1)
 
 #emu = np.append(emu,np.zeros((1,5)),0)
-x86 = np.delete(x86,-1,0)
+
 
 if (type(emu) == int):
-    print(error[emu-1])
-
-#mp.plot(np.array((emu[0][:,0]),dtype=int),emu[0][:,1],x86[0][:,1],0,int(x[0,0,3]),int(x[0,0,4]))
-
-#mp.plot(np.array((emu[sp][:,0]),dtype=int), #thread count axis
-#        emu[sp][:,op+1],                    #EMU clock cycles
-#        x86[sp][:,op+1],                    #x86 clock cycles
-#        op,                                 #operation
-#        int(emu[sp,0,3]),                   #sparsity
-#        int(emu[sp,0,4]),                   #matrix size
-#        ps)
+    print("EMU: " + error[emu-1])
     
-plt = mp.plot(np.array((x86[:,0]),dtype=int),                             #X data
-        np.array([emu[:,2],x86[:,2],-2.8*x86[:,2],1.6*x86[:,2],x86[:,2]]),                              #Y data
-        [0,0,1,0,0],                                                      #Plot Type
-        ["blue","red","purple","green","orange"],                                          #Colors
-        ["Threads","Clock Cycles","EMU vs AMD","EMU","x86","x88","x89","x80"],
-        [1,0,1,1,0])     #Labels
+elif (type(x86) == int):
+    print("x86: " + error[x86-1])
 
-plt.savefig('test.svg',transparent = True)
+else:
+    x86 = np.delete(x86,-1,1)
+    
+    plt = mp.plot(np.array((x86[0,:,0]),dtype=int),                             #X data
+            np.array([emu[0,:,2],x86[0,:,2],-2.8*x86[0,:,2],1.6*x86[0,:,2],x86[0,:,2]]),                              #Y data
+            [0,0,1,0,0],                                                      #Plot Type
+            ["blue","red","purple","green","orange"],                                          #Colors
+            ["Threads","Clock Cycles","EMU vs AMD","EMU","x86","x88","x89","x80"],
+            [1,0,1,1,0])     #Labels
+    
+    plt.savefig('test.svg',transparent = True)
