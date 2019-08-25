@@ -94,44 +94,49 @@ def parse (filelines,keywords,case_sensitive,method,splitting):
     #table = np.array(table,dtype=table_dtype)
     #table = np.sort(table,order="sparsity")
     
-    
-    for i in range(0,len(keywords)):
-        if splitting[i] == 2:
-            tableSplitterIndex = i
-            break
+    if 2 in splitting:
+        for i in range(0,len(keywords)):
+            if splitting[i] == 2:
+                tableSplitterIndex = i
+                break
+            
+        splitValues = np.empty((0,),float)
+        for i in range(0,table.shape[1]):
+            splitValue = table[0][i][tableSplitterIndex]
+            
+            if splitValue not in splitValues:
+                splitValues = np.append(splitValues,[splitValue],0)
         
-    splitValues = np.empty((0,),float)
-    for i in range(0,table.shape[1]):
-        splitValue = table[0][i][tableSplitterIndex]
+        splitValues = np.sort(splitValues)
         
-        if splitValue not in splitValues:
-            splitValues = np.append(splitValues,[splitValue],0)
-    
-    splitValues = np.sort(splitValues)
-    
-    tempSplitTable = np.zeros((len(splitValues),1,len(keywords)),float)
-    tempSplitCheck = np.zeros((len(splitValues),))
-    splitTable = np.empty((len(splitValues),0,len(keywords)),float)
-    
-    for i in range(0,table.shape[1]):
-        for j,splitValue in enumerate(splitValues):
-            if table[0][i][tableSplitterIndex] == splitValue:
-                tempSplitTable[j] = table[0][i]
-                tempSplitCheck[j] = 1
-                #print("Should append:\t" + str(table[0][i]) + "\tto split table at index: " + str(j))
-            if np.sum(tempSplitCheck) == len(splitValues):
-                splitTable = np.append(splitTable,tempSplitTable,1)
-                tempSplitCheck = np.zeros((len(splitValues),))
-                tempSplitTable = np.zeros((len(splitValues),1,len(keywords)),float)
-    
-    if i == (table.shape[1] - 1) and not np.sum(tempSplitCheck) == 0: #reached end of table without appending all values
-        splitTable = np.append(splitTable,tempSplitTable,1)
-
+        tempSplitTable = np.zeros((len(splitValues),1,len(keywords)),float)
+        tempSplitCheck = np.zeros((len(splitValues),))
+        splitTable = np.empty((len(splitValues),0,len(keywords)),float)
+        
+        for i in range(0,table.shape[1]):
+            for j,splitValue in enumerate(splitValues):
+                if table[0][i][tableSplitterIndex] == splitValue:
+                    if tempSplitCheck[j] == 1:
+                        splitTable = np.append(splitTable,tempSplitTable,1)
+                        tempSplitCheck = np.zeros((len(splitValues),))
+                        tempSplitTable = np.zeros((len(splitValues),1,len(keywords)),float)
+                    tempSplitTable[j] = table[0][i]
+                    tempSplitCheck[j] = 1
+                    #print("Should append:\t" + str(table[0][i]) + "\tto split table at index: " + str(j))
+                if np.sum(tempSplitCheck) == len(splitValues):
+                    splitTable = np.append(splitTable,tempSplitTable,1)
+                    tempSplitCheck = np.zeros((len(splitValues),))
+                    tempSplitTable = np.zeros((len(splitValues),1,len(keywords)),float)
+        
+        if i == (table.shape[1] - 1) and not np.sum(tempSplitCheck) == 0: #reached end of table without appending all values
+            splitTable = np.append(splitTable,tempSplitTable,1)
+        
+        table = splitTable
 #1 2 3 4
 #1 2 3 4
 #0 2 3 0 #done
-#0 2 3 0 #not yet            
-    return splitTable
+#0 2 3 0 #not yet, check it tempSplitCheck[j] is already 1
+    return table
 
 #f = open("SolOnly29July3rdAPOut512Threads.txt")
 f = open("cooOut512Threads.txt")
