@@ -1,0 +1,329 @@
+**************************************************************
+Number of Threads --> 
+16
+sparsity = 0
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n7:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n6:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n5:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n4:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n3:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n2:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n1:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n7
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n6
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n5
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n4
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n3
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n2
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n1
+emu_multinode_exec: STATUS: Running emu_handler_and_loader 
+Solution time taken 73406339
+emu_multinode_exec: STATUS: Execution complete, checking system state....
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n7.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n6.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n5.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n4.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n3.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n2.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n1.
+emu_multinode_exec: STATUS: Gathering logs...
+emu_multinode_exec: STATUS: Gathering logs from  n7
+emu_multinode_exec: STATUS: Gathering logs from  n6
+emu_multinode_exec: STATUS: Gathering logs from  n5
+emu_multinode_exec: STATUS: Gathering logs from  n4
+emu_multinode_exec: STATUS: Gathering logs from  n3
+emu_multinode_exec: STATUS: Gathering logs from  n2
+emu_multinode_exec: STATUS: Gathering logs from  n1
+emu_multinode_exec: STATUS: User logs in /home/ammarwa/MatrixGen/mn_exec_usr.5359.n0.log
+emu_multinode_exec: STATUS: System logs in /home/ammarwa/MatrixGen/mn_exec_sys.5359.n0.log
+emu_multinode_exec: STATUS: Logs collected, script complete.
+16 done
+**************************************************************
+**************************************************************
+Number of Threads --> 
+32
+sparsity = 0
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n7:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n6:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n5:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n4:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n3:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n2:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n1:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n7
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n6
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n5
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n4
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n3
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n2
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n1
+emu_multinode_exec: STATUS: Running emu_handler_and_loader 
+Solution time taken 36927616
+emu_multinode_exec: STATUS: Execution complete, checking system state....
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n7.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n6.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n5.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n4.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n3.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n2.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n1.
+emu_multinode_exec: STATUS: Gathering logs...
+emu_multinode_exec: STATUS: Gathering logs from  n7
+emu_multinode_exec: STATUS: Gathering logs from  n6
+emu_multinode_exec: STATUS: Gathering logs from  n5
+emu_multinode_exec: STATUS: Gathering logs from  n4
+emu_multinode_exec: STATUS: Gathering logs from  n3
+emu_multinode_exec: STATUS: Gathering logs from  n2
+emu_multinode_exec: STATUS: Gathering logs from  n1
+emu_multinode_exec: STATUS: User logs in /home/ammarwa/MatrixGen/mn_exec_usr.5747.n0.log
+emu_multinode_exec: STATUS: System logs in /home/ammarwa/MatrixGen/mn_exec_sys.5747.n0.log
+emu_multinode_exec: STATUS: Logs collected, script complete.
+32 done
+**************************************************************
+**************************************************************
+Number of Threads --> 
+64
+sparsity = 0
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n7:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n6:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n5:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n4:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n3:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n2:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n1:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n7
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n6
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n5
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n4
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n3
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n2
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n1
+emu_multinode_exec: STATUS: Running emu_handler_and_loader 
+Solution time taken 19158646
+emu_multinode_exec: STATUS: Execution complete, checking system state....
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n7.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n6.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n5.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n4.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n3.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n2.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n1.
+emu_multinode_exec: STATUS: Gathering logs...
+emu_multinode_exec: STATUS: Gathering logs from  n7
+emu_multinode_exec: STATUS: Gathering logs from  n6
+emu_multinode_exec: STATUS: Gathering logs from  n5
+emu_multinode_exec: STATUS: Gathering logs from  n4
+emu_multinode_exec: STATUS: Gathering logs from  n3
+emu_multinode_exec: STATUS: Gathering logs from  n2
+emu_multinode_exec: STATUS: Gathering logs from  n1
+emu_multinode_exec: STATUS: User logs in /home/ammarwa/MatrixGen/mn_exec_usr.6128.n0.log
+emu_multinode_exec: STATUS: System logs in /home/ammarwa/MatrixGen/mn_exec_sys.6128.n0.log
+emu_multinode_exec: STATUS: Logs collected, script complete.
+64 done
+**************************************************************
+**************************************************************
+Number of Threads --> 
+128
+sparsity = 0
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n7:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n6:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n5:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n4:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n3:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n2:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n1:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n7
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n6
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n5
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n4
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n3
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n2
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n1
+emu_multinode_exec: STATUS: Running emu_handler_and_loader 
+Solution time taken 11528820
+emu_multinode_exec: STATUS: Execution complete, checking system state....
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n7.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n6.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n5.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n4.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n3.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n2.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n1.
+emu_multinode_exec: STATUS: Gathering logs...
+emu_multinode_exec: STATUS: Gathering logs from  n7
+emu_multinode_exec: STATUS: Gathering logs from  n6
+emu_multinode_exec: STATUS: Gathering logs from  n5
+emu_multinode_exec: STATUS: Gathering logs from  n4
+emu_multinode_exec: STATUS: Gathering logs from  n3
+emu_multinode_exec: STATUS: Gathering logs from  n2
+emu_multinode_exec: STATUS: Gathering logs from  n1
+emu_multinode_exec: STATUS: User logs in /home/ammarwa/MatrixGen/mn_exec_usr.6518.n0.log
+emu_multinode_exec: STATUS: System logs in /home/ammarwa/MatrixGen/mn_exec_sys.6518.n0.log
+emu_multinode_exec: STATUS: Logs collected, script complete.
+128 done
+**************************************************************
+**************************************************************
+Number of Threads --> 
+256
+sparsity = 0
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n7:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n6:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n5:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n4:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n3:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n2:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n1:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n7
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n6
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n5
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n4
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n3
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n2
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n1
+emu_multinode_exec: STATUS: Running emu_handler_and_loader 
+Solution time taken 10812110
+emu_multinode_exec: STATUS: Execution complete, checking system state....
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n7.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n6.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n5.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n4.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n3.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n2.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n1.
+emu_multinode_exec: STATUS: Gathering logs...
+emu_multinode_exec: STATUS: Gathering logs from  n7
+emu_multinode_exec: STATUS: Gathering logs from  n6
+emu_multinode_exec: STATUS: Gathering logs from  n5
+emu_multinode_exec: STATUS: Gathering logs from  n4
+emu_multinode_exec: STATUS: Gathering logs from  n3
+emu_multinode_exec: STATUS: Gathering logs from  n2
+emu_multinode_exec: STATUS: Gathering logs from  n1
+emu_multinode_exec: STATUS: User logs in /home/ammarwa/MatrixGen/mn_exec_usr.6905.n0.log
+emu_multinode_exec: STATUS: System logs in /home/ammarwa/MatrixGen/mn_exec_sys.6905.n0.log
+emu_multinode_exec: STATUS: Logs collected, script complete.
+256 done
+**************************************************************
+**************************************************************
+Number of Threads --> 
+512
+sparsity = 0
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n7:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n6:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n5:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n4:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n3:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n2:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n1:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n7
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n6
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n5
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n4
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n3
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n2
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n1
+emu_multinode_exec: STATUS: Running emu_handler_and_loader 
+Solution time taken 15109973
+emu_multinode_exec: STATUS: Execution complete, checking system state....
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n7.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n6.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n5.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n4.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n3.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n2.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n1.
+emu_multinode_exec: STATUS: Gathering logs...
+emu_multinode_exec: STATUS: Gathering logs from  n7
+emu_multinode_exec: STATUS: Gathering logs from  n6
+emu_multinode_exec: STATUS: Gathering logs from  n5
+emu_multinode_exec: STATUS: Gathering logs from  n4
+emu_multinode_exec: STATUS: Gathering logs from  n3
+emu_multinode_exec: STATUS: Gathering logs from  n2
+emu_multinode_exec: STATUS: Gathering logs from  n1
+emu_multinode_exec: STATUS: User logs in /home/ammarwa/MatrixGen/mn_exec_usr.7286.n0.log
+emu_multinode_exec: STATUS: System logs in /home/ammarwa/MatrixGen/mn_exec_sys.7286.n0.log
+emu_multinode_exec: STATUS: Logs collected, script complete.
+512 done
+**************************************************************
+**************************************************************
+Number of Threads --> 
+1024
+sparsity = 0
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n7:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n6:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n5:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n4:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n3:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n2:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n1:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n7
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n6
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n5
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n4
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n3
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n2
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n1
+emu_multinode_exec: STATUS: Running emu_handler_and_loader 
+Solution time taken 36908566
+emu_multinode_exec: STATUS: Execution complete, checking system state....
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n7.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n6.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n5.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n4.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n3.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n2.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n1.
+emu_multinode_exec: STATUS: Gathering logs...
+emu_multinode_exec: STATUS: Gathering logs from  n7
+emu_multinode_exec: STATUS: Gathering logs from  n6
+emu_multinode_exec: STATUS: Gathering logs from  n5
+emu_multinode_exec: STATUS: Gathering logs from  n4
+emu_multinode_exec: STATUS: Gathering logs from  n3
+emu_multinode_exec: STATUS: Gathering logs from  n2
+emu_multinode_exec: STATUS: Gathering logs from  n1
+emu_multinode_exec: STATUS: User logs in /home/ammarwa/MatrixGen/mn_exec_usr.7673.n0.log
+emu_multinode_exec: STATUS: System logs in /home/ammarwa/MatrixGen/mn_exec_sys.7673.n0.log
+emu_multinode_exec: STATUS: Logs collected, script complete.
+1024 done
+**************************************************************
+**************************************************************
+Number of Threads --> 
+2048
+sparsity = 0
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n7:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n6:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n5:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n4:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n3:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n2:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Copying EMU/execDenseTH.mwx to n1:/tmp/ammarwa/execDenseTH.mwx
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n7
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n6
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n5
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n4
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n3
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n2
+emu_multinode_exec: STATUS: Launching emu_seq_handler_background and emu_loader on n1
+emu_multinode_exec: STATUS: Running emu_handler_and_loader 
+Solution time taken 36482938
+emu_multinode_exec: STATUS: Execution complete, checking system state....
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n7.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n6.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n5.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n4.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n3.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n2.
+emu_multinode_exec: STATUS: emu_seq_handler_background exited properly on n1.
+emu_multinode_exec: STATUS: Gathering logs...
+emu_multinode_exec: STATUS: Gathering logs from  n7
+emu_multinode_exec: STATUS: Gathering logs from  n6
+emu_multinode_exec: STATUS: Gathering logs from  n5
+emu_multinode_exec: STATUS: Gathering logs from  n4
+emu_multinode_exec: STATUS: Gathering logs from  n3
+emu_multinode_exec: STATUS: Gathering logs from  n2
+emu_multinode_exec: STATUS: Gathering logs from  n1
+emu_multinode_exec: STATUS: User logs in /home/ammarwa/MatrixGen/mn_exec_usr.8061.n0.log
+emu_multinode_exec: STATUS: System logs in /home/ammarwa/MatrixGen/mn_exec_sys.8061.n0.log
+emu_multinode_exec: STATUS: Logs collected, script complete.
+2048 done
+**************************************************************
+All done

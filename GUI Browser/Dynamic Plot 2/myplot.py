@@ -5,7 +5,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 
-def bar_autolabel(rects,color,plot,figure):
+def bar_autolabel(rects,color,plot,figure,width):
     """Attach a text label above each bar in *rects*, displaying its height."""
     for rect in rects:
         height = rect.get_height()
@@ -13,16 +13,16 @@ def bar_autolabel(rects,color,plot,figure):
         if(height >= 0):
             label = plot.annotate(str(format(height,'1.1e'))[0:4]+str(format(height,'1.1e'))[-1],
                         xy=(rect.get_x() + rect.get_width() / 2, height),
-                        xytext=(0, 3),  # 3 points vertical offset
+                        xytext=(0, 4),  # 3 points vertical offset
                         textcoords="offset points",
-                        ha='center', va='bottom',color=color,rotation = 90)
+                        ha='center', va='bottom',color=color,rotation = 90,fontsize=width*33) #width * 33 for 3 bars
             
         else:
             label = plot.annotate(str(format(height,'1.1e'))[0:5]+str(format(height,'1.1e'))[-1],
                         xy=(rect.get_x() + rect.get_width() / 2, height),
-                        xytext=(0, -3),  # 3 points vertical offset
+                        xytext=(0, -4),  # 3 points vertical offset
                         textcoords="offset points",
-                        ha='center', va='top',color=color,rotation = 90)
+                        ha='center', va='top',color=color,rotation = 90,fontsize=width*33)
         
         figure.tight_layout()
         #plt.draw()
@@ -41,7 +41,7 @@ def line_check(ypoints):
     
     return len(checkPoints) == 1
     
-def plot_autolabel(pointsx,pointsy,color,plot,figure):
+def plot_autolabel(pointsx,pointsy,color,plot,figure,width):
     points = np.array((pointsx,pointsy)).T
     
     if not line_check(pointsy):
@@ -50,15 +50,15 @@ def plot_autolabel(pointsx,pointsy,color,plot,figure):
             if(point[1] >= 0):
                 label = plot.annotate(str(format(point[1],'1.1e'))[0:4]+str(format(point[1],'1.1e'))[-1],
                             xy=(point),
-                            xytext=(0, 3),  # 3 points vertical offset
+                            xytext=(0, 4),  # 3 points vertical offset
                             textcoords="offset points",
-                            ha='center', va='bottom',rotation = 90, color=color)
+                            ha='center', va='bottom',rotation = 90, color=color,fontsize=width*33)
             else:
                 label = plot.annotate(str(format(point[1],'1.1e'))[0:5]+str(format(point[1],'1.1e'))[-1],
                             xy=(point),
-                            xytext=(0, -3),  # 3 points vertical offset
+                            xytext=(0, -4),  # 3 points vertical offset
                             textcoords="offset points",
-                            ha='center', va='top',rotation = 90, color=color)
+                            ha='center', va='top',rotation = 90, color=color,fontsize=width*33)
             
             figure.tight_layout()
             #plt.draw()
@@ -70,18 +70,19 @@ def plot_autolabel(pointsx,pointsy,color,plot,figure):
     else:
         label = 0
         point = points[-1]
+        point[0] = point[0] + 1
         if(point[1] >= 0):
             label = plot.annotate(str(format(point[1],'1.1e'))[0:4]+str(format(point[1],'1.1e'))[-1],
                         xy=(point),
-                        xytext=(10, 0),  # 3 points vertical offset
+                        xytext=(4, 0),  # 3 points vertical offset
                         textcoords="offset points",
-                        ha='left', va='center',rotation = 0, color=color)
+                        ha='left', va='center',rotation = 0, color=color,fontsize=width*33)
         else:
             label = plot.annotate(str(format(point[1],'1.1e'))[0:5]+str(format(point[1],'1.1e'))[-1],
                         xy=(point),
-                        xytext=(10, 0),  # 3 points vertical offset
+                        xytext=(4, 0),  # 3 points vertical offset
                         textcoords="offset points",
-                        ha='left', va='center',rotation = 0, color=color)
+                        ha='left', va='center',rotation = 0, color=color,fontsize=width*33)
         
         figure.tight_layout()
         #plt.draw()
@@ -114,12 +115,16 @@ def plot(xdata,ydata,types,colors,labels,plot_labels):
         if(types[i] == 0):
             this_plot = ax.bar(xticks + width*(bar_index - ((bar_count-1)/2)),ydata[i],width,label = labels[i+3],color = colors[i])
             if(plot_labels[i] == 1):
-                bar_autolabel(this_plot,colors[i],ax,fig)
+                bar_autolabel(this_plot,colors[i],ax,fig,width)
             bar_index = bar_index + 1
         if(types[i] == 1):
-            this_plot = ax.plot(xticks,ydata[i],label = labels[i+3],color = colors[i])
+            if not line_check(ydata[i]):
+                this_plot = ax.plot(xticks,ydata[i],label = labels[i+3],color = colors[i])
+            else:
+                xticks_line = np.arange(len(xdata)+2)-1
+                this_plot = ax.plot(xticks_line,ydata[i][0]*np.ones((len(xticks_line),)),label = labels[i+3],color = colors[i])
             if(plot_labels[i] == 1):
-                plot_autolabel(xticks,ydata[i],colors[i],ax,fig)
+                plot_autolabel(xticks,ydata[i],colors[i],ax,fig,width)
         
         #scatter plot
         #if(types[i] == 0): this_plot = ax.bar(x + (width*i - bar_count),ydata[i],width,label = labels[i+4])

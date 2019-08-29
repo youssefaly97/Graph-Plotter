@@ -135,7 +135,7 @@ def parse (filelines,keywords,case_sensitive,method,splitting):
 #1 2 3 4
 #1 2 3 4
 #0 2 3 0 #done
-#0 2 3 0 #not yet, check it tempSplitCheck[j] is already 1
+#0 2 3 0 #not yet, check it tempSplitCheck[j] is already 1 -- done and needs testing with more than 2 sparsities
     return table
 
 #f = open("SolOnly29July3rdAPOut512Threads.txt")

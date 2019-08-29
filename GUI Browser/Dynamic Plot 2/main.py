@@ -114,6 +114,20 @@ if (type(emu) == int):
 #plt.savefig('1024allThreads.png',transparent = True)
 #plt.savefig('1024allThreads.svg',transparent = True)
     
+#plt = mp.plot(np.array((x86[:,0]),dtype=int),                           #X data
+#        np.array([emuTH[:,2],emuTH[:,2],emuTH[:,2],x86TH[1,2]*np.ones((x86.shape[0],))]),                              #Y data
+#        [0,0,0,1],                                                          #Plot Type
+#        ["blue","green","red","orange"],                                              #Colors
+#        ["Threads","Clock Cycles","EMU vs x86 1024","EMU","EMU2","EMU3","x86"],       #Names
+#        [1,1,1,1])                                                          #Labels
+
+#plt = mp.plot(np.array((x86[:,0]),dtype=int),                           #X data
+#        np.array([emuTH[:,2],emuTH[:,2],emuTH[:,2],emuTH[:,2],x86TH[1,2]*np.ones((x86.shape[0],))]),                              #Y data
+#        [0,0,0,0,1],                                                          #Plot Type
+#        ["blue","green","cyan","green","orange"],                                              #Colors
+#        ["Threads","Clock Cycles","EMU vs x86 1024","EMU","EMU2","EMU2.5","EMU3","x86"],       #Names
+#        [1,1,1,1,1])                                                          #Labels
+
 plt = mp.plot(np.array((x86[:,0]),dtype=int),                           #X data
         np.array([emuTH[:,2],x86TH[1,2]*np.ones((x86.shape[0],))]),                              #Y data
         [0,1],                                                          #Plot Type
