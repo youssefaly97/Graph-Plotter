@@ -129,8 +129,8 @@ if (type(emu) == int):
 #        [1,1,1,1,1])                                                          #Labels
 
 plt = mp.plot(np.array((x86[:,0]),dtype=int),                           #X data
-        np.array([emuTH[:,2],x86TH[1,2]*np.ones((x86.shape[0],))]),                              #Y data
-        [0,1],                                                          #Plot Type
+        np.array([emuTH[:,2],x86TH[:,2]*np.ones((x86.shape[0],))]),                              #Y data
+        [0,0],                                                          #Plot Type
         ["blue","orange"],                                              #Colors
         ["Threads","Clock Cycles","EMU vs x86 1024","EMU","x86"],       #Names
         [1,1])                                                          #Labels
